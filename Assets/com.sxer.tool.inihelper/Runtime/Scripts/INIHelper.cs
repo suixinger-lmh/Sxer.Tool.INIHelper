@@ -6,6 +6,9 @@ using UnityEngine;
 
 namespace Sxer.Tool
 {
+    /// <summary>
+    /// 目前存在问题：对部分机器在编辑ini文件后，编码可能变动，文件头两个字节造成读取文件失败(读不到数据)
+    /// </summary>
     public static class INIHelper
     {
         #region ini win32API读取
